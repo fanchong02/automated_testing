@@ -78,7 +78,7 @@
         age,
         desc
       };
-      successLog('通过校验，提交数据：' + JSON.stringify(data));
+      successLog('通过校验，提交数据：' + JSON.stringify(data) + '😘');
       // alert('通过校验，提交数据：'+JSON.stringify(data));
     })
   </script>
