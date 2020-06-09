@@ -33,7 +33,7 @@
     个人介绍： <textarea id="desc" cols="5" class="desc" placeholder="请输入个人介绍，做多100字符"></textarea>
   </label>
 
-  <button type="button">提交</button>
+  <button class="btn" type="button">提交</button>
   <div class="result">
     校验结果：
     <div class="log"></div>
