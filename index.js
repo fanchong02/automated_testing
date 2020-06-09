@@ -17,12 +17,11 @@ const path = require('path');
   });
 
   await page.goto(path.join('file://', path.resolve('./'), 'index.shtml'));
-  // await page.pdf({ path: 'index.pdf', format: 'A3' });
 
   await page.click('.btn');
   await page.screenshot({
     fullPage: true,
-    path: `assets/1验证空name.png` //保存截图路径
+    path: `assets/form/1验证空name.png` //保存截图路径
   });
   await page.waitFor(1000);
 
@@ -32,7 +31,7 @@ const path = require('path');
   await page.click('.btn');
   await page.screenshot({
     fullPage: true,
-    path: `assets/2验证name超长.png` //保存截图路径
+    path: `assets/form/2验证name超长.png` //保存截图路径
   });
   await page.waitFor(1000);
 
@@ -42,7 +41,7 @@ const path = require('path');
   await page.click('.btn');
   await page.screenshot({
     fullPage: true,
-    path: `assets/3验证空name符合标准.png` //保存截图路径
+    path: `assets/form/3验证空name符合标准.png` //保存截图路径
   });
   await page.waitFor(1000);
 
@@ -52,7 +51,7 @@ const path = require('path');
   await page.click('.btn');
   await page.screenshot({
     fullPage: true,
-    path: `assets/4验证age 为 负数.png` //保存截图路径
+    path: `assets/form/4验证age 为 负数.png` //保存截图路径
   });
   await page.waitFor(1000);
 
@@ -60,7 +59,7 @@ const path = require('path');
   await page.click('.btn');
   await page.screenshot({
     fullPage: true,
-    path: `assets/5验证age为0.png` //保存截图路径
+    path: `assets/form/5验证age为0.png` //保存截图路径
   });
   await page.waitFor(1000);
 
@@ -68,7 +67,7 @@ const path = require('path');
   await page.click('.btn');
   await page.screenshot({
     fullPage: true,
-    path: `assets/6验证age为大于1000.png` //保存截图路径
+    path: `assets/form/6验证age为大于1000.png` //保存截图路径
   });
   await page.waitFor(1000);
 
@@ -76,7 +75,7 @@ const path = require('path');
   await page.click('.btn');
   await page.screenshot({
     fullPage: true,
-    path: `assets/7验证age符合标准.png` //保存截图路径
+    path: `assets/form/7验证age符合标准.png` //保存截图路径
   });
   await page.waitFor(1000);
 
@@ -86,7 +85,7 @@ const path = require('path');
   await page.click('.btn');
   await page.screenshot({
     fullPage: true,
-    path: `assets/8验证desc超长.png` //保存截图路径
+    path: `assets/form/8验证desc超长.png` //保存截图路径
   });
   await page.waitFor(1000);
 
@@ -96,12 +95,12 @@ const path = require('path');
   await page.click('.btn');
   await page.screenshot({
     fullPage: true,
-    path: `assets/9验证desc符合标准.png` //保存截图路径
+    path: `assets/form/9验证desc符合标准.png` //保存截图路径
   });
 
   await page.screenshot({
     fullPage: true,
-    path: `assets/${await page.title()}.png` //保存截图路径
+    path: `assets/form/${await page.title()}.png` //保存截图路径
   });
   await page.waitFor(5000);
 
