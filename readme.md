@@ -7,6 +7,4 @@ cd automated_testing && yarn install
 yarn run test
 ```
 来对这个html文件进行测试吧！
-
-示例：
 ![img](https://github.com/fanchong02/automated_testing/blob/master/images/1591685168212.gif)
