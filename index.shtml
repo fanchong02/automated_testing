@@ -23,9 +23,16 @@
 </head>
 
 <body>
-  <input type="text" class="name" placeholder="请输入姓名，做多20个字符" />
-  <input type="text" class="age" placeholder="请输入年龄，正整数" />
-  <textarea cols="5" class="desc" placeholder="请输入介绍，做多100字符"></textarea>
+  <label for="name">
+    姓名：<input id="name" type="text" class="name" placeholder="请输入姓名，做多20个字符" />
+  </label>
+  <label for="age">
+    年龄： <input id="age" type="text" class="age" placeholder="请输入年龄，正整数" />
+  </label>
+  <label for="desc">
+    个人介绍： <textarea id="desc" cols="5" class="desc" placeholder="请输入个人介绍，做多100字符"></textarea>
+  </label>
+
   <button type="button">提交</button>
   <div class="result">
     校验结果：
@@ -60,11 +67,11 @@
         successLog('年龄：校验通过√');
       }
       if (!desc) {
-        return errorLog('介绍：请填写介绍');
+        return errorLog('个人介绍：请填写个人介绍');
       } else if (desc.length > 100) {
-        return errorLog('介绍：个人介绍不能超过100个字符');
+        return errorLog('个人介绍：个人介绍不能超过100个字符');
       } else {
-        successLog('介绍：通过校验√');
+        successLog('个人介绍：通过校验√');
       }
       var data = {
         name,
