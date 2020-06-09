@@ -26,7 +26,7 @@ const path = require('path');
   });
   await page.waitFor(1000);
 
-  await page.type('.name', '测试-樊冲测试长度测试长度，一共21个字符', {
+  await page.type('.name', '测试-姓名测试长度测试长度，一共21个字符', {
     delay: 100
   });
   await page.click('button');
