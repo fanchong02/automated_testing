@@ -2,6 +2,7 @@
 
 尝试使用
 ```dotnetcli
-npm run test
+yarn install
+yarn run test
 ```
 来对这个html文件进行测试吧！
