@@ -2,7 +2,8 @@
 
 尝试使用
 ```dotnetcli
-yarn install
+git clone https://github.com/fanchong02/automated_testing.git
+cd automated_testing && yarn install
 yarn run test
 ```
 来对这个html文件进行测试吧！
