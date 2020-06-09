@@ -2,6 +2,6 @@
 
 尝试使用
 ```dotnetcli
-  npm run test
+npm run test
 ```
 来对这个html文件进行测试吧！
