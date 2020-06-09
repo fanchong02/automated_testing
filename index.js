@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+const path = require('path');
 
 (async () => {
   const browser = await puppeteer.launch({
@@ -15,7 +16,7 @@ const puppeteer = require('puppeteer');
     isMobile: true,
   });
 
-  await page.goto('file:///Users/Touch/F_Projects/Puppeteer/index.shtml?1');
+  await page.goto(path.join('file://', path.resolve('./'), 'index.shtml'));
   // await page.pdf({ path: 'index.pdf', format: 'A3' });
 
   await page.click('button');
