@@ -21,7 +21,7 @@ const puppeteer = require('puppeteer');
   await page.click('button');
   await page.screenshot({
     fullPage: true,
-    path: `验证空name.png` //保存截图路径
+    path: `assets/1验证空name.png` //保存截图路径
   });
   await page.waitFor(1000);
 
@@ -31,7 +31,7 @@ const puppeteer = require('puppeteer');
   await page.click('button');
   await page.screenshot({
     fullPage: true,
-    path: `验证name超长.png` //保存截图路径
+    path: `assets/2验证name超长.png` //保存截图路径
   });
   await page.waitFor(1000);
 
@@ -41,7 +41,7 @@ const puppeteer = require('puppeteer');
   await page.click('button');
   await page.screenshot({
     fullPage: true,
-    path: `验证空name符合标准.png` //保存截图路径
+    path: `assets/3验证空name符合标准.png` //保存截图路径
   });
   await page.waitFor(1000);
 
@@ -51,7 +51,7 @@ const puppeteer = require('puppeteer');
   await page.click('button');
   await page.screenshot({
     fullPage: true,
-    path: `验证age 为 负数.png` //保存截图路径
+    path: `assets/4验证age 为 负数.png` //保存截图路径
   });
   await page.waitFor(1000);
 
@@ -59,7 +59,7 @@ const puppeteer = require('puppeteer');
   await page.click('button');
   await page.screenshot({
     fullPage: true,
-    path: `验证age为0.png` //保存截图路径
+    path: `assets/5验证age为0.png` //保存截图路径
   });
   await page.waitFor(1000);
 
@@ -67,7 +67,7 @@ const puppeteer = require('puppeteer');
   await page.click('button');
   await page.screenshot({
     fullPage: true,
-    path: `验证age为大于1000.png` //保存截图路径
+    path: `assets/6验证age为大于1000.png` //保存截图路径
   });
   await page.waitFor(1000);
 
@@ -75,7 +75,7 @@ const puppeteer = require('puppeteer');
   await page.click('button');
   await page.screenshot({
     fullPage: true,
-    path: `验证age符合标准.png` //保存截图路径
+    path: `assets/7验证age符合标准.png` //保存截图路径
   });
   await page.waitFor(1000);
 
@@ -85,7 +85,7 @@ const puppeteer = require('puppeteer');
   await page.click('button');
   await page.screenshot({
     fullPage: true,
-    path: `验证desc超长.png` //保存截图路径
+    path: `assets/8验证desc超长.png` //保存截图路径
   });
   await page.waitFor(1000);
 
@@ -95,12 +95,12 @@ const puppeteer = require('puppeteer');
   await page.click('button');
   await page.screenshot({
     fullPage: true,
-    path: `验证desc符合标准.png` //保存截图路径
+    path: `assets/9验证desc符合标准.png` //保存截图路径
   });
 
   await page.screenshot({
     fullPage: true,
-    path: `${await page.title()}.png` //保存截图路径
+    path: `assets/${await page.title()}.png` //保存截图路径
   });
   await page.waitFor(5000);
 
